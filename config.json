@@ -1,0 +1,22 @@
+{
+  "data" : [
+    {
+      "entity" : "customers",
+      "schema": "Data_Accelerator/schema/customers.json",
+      "read_option" : 
+      {
+        "path" : "Data_Accelerator/data/customers/customers.csv",
+        "format": "csv",
+        "sep": ",",
+        "header": true,
+        "inferSchema": false
+      },
+      "write_option" :
+      {
+        "path": "Data_Accelerator/landing/customers/",
+        "format": "parquet",
+        "mode": "append"
+      }
+    }
+  ]
+}
