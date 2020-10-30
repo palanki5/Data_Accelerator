@@ -1,7 +1,15 @@
 {
+  "spark" :
+  {
+    "conf":
+    {
+      "key": ["master", "appName"],
+      "value": ["local[*]", "BigData"]
+    }
+  },
   "data" : [
     {
-      "entity" : "customers",
+      "entity_name" : "customers",
       "schema": "Data_Accelerator/schema/customers.json",
       "read_option" : 
       {
